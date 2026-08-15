@@ -73,7 +73,13 @@
       <div id="coaSection" style="display:none;">
         <div class="folder" onclick="toggle2018()">► 📁 2018</div>
           <div id="year2018" style="display:none;">
-            <div class="document"<p><a href="https://drive.google.com/file/d/1rFLfA2QFs40okYaDYrQMZPDCC_Nb3qP9/view">📄 View Report</a></p></div>
+            <div class="document">
+              <p>
+                <a href="https://drive.google.com/file/d/1rFLfA2QFs40okYaDYrQMZPDCC_Nb3qP9/view">
+                  📄 View Report
+                </a>
+              </p>
+            </div>
           </div>
         <div class="folder"><p>► 📁 2019</p></div>
         <div class="folder"><p>► 📁 2020</p></div>
@@ -84,14 +90,122 @@
         <div class="folder"><p>► 📁 2025</p></div>
         <div class="folder"><p>► 📁 2026</p></div>
       </div>
-      <p><a class="button" href="">💰 Budget Reports</a></p>
-      <p><a class="button" href="">🧾 Ordinances</a></p>
-      <p><a class="button" href="">📋 Resolutions</a></p>
-      <p><a class="button" href="">📜 Historical</a></p>
+      <button class="button" onclick="toggleBudget()">💰 Budget Reports</button>
+      <div id="budgetSection" style="display:none;">
+        <div class="folder" onclick="toggle2018()">► 📁 2018</div>
+          <div id="year2018" style="display:none;">
+            <div class="document">
+              <p>
+                <a href="https://drive.google.com/file/d/1rFLfA2QFs40okYaDYrQMZPDCC_Nb3qP9/view">
+                  📄 View Report
+                </a>
+              </p>
+            </div>
+          </div>
+        <div class="folder"><p>► 📁 2019</p></div>
+        <div class="folder"><p>► 📁 2020</p></div>
+        <div class="folder"><p>► 📁 2021</p></div>
+        <div class="folder"><p>► 📁 2022</p></div>
+        <div class="folder"><p>► 📁 2023</p></div>
+        <div class="folder"><p>► 📁 2024</p></div>
+        <div class="folder"><p>► 📁 2025</p></div>
+        <div class="folder"><p>► 📁 2026</p></div>
+      </div>
+      <button class="button" onclick="toggleOrdinances()">🧾 Ordinances</button>
+      <div id="ordinancesSection" style="display:none;">
+        <div class="folder" onclick="toggle2018()">► 📁 2018</div>
+          <div id="year2018" style="display:none;">
+            <div class="document">
+              <p>
+                <a href="https://drive.google.com/file/d/1rFLfA2QFs40okYaDYrQMZPDCC_Nb3qP9/view">
+                  📄 View Report
+                </a>
+              </p>
+            </div>
+          </div>
+        <div class="folder"><p>► 📁 2019</p></div>
+        <div class="folder"><p>► 📁 2020</p></div>
+        <div class="folder"><p>► 📁 2021</p></div>
+        <div class="folder"><p>► 📁 2022</p></div>
+        <div class="folder"><p>► 📁 2023</p></div>
+        <div class="folder"><p>► 📁 2024</p></div>
+        <div class="folder"><p>► 📁 2025</p></div>
+        <div class="folder"><p>► 📁 2026</p></div>
+      </div>
+      <button class="button" onclick="toggleResolutions()">📋 Resolutions</button>
+      <div id="resolutionsSection" style="display:none;">
+        <div class="folder" onclick="toggle2018()">► 📁 2018</div>
+          <div id="year2018" style="display:none;">
+            <div class="document">
+              <p>
+                <a href="https://drive.google.com/file/d/1rFLfA2QFs40okYaDYrQMZPDCC_Nb3qP9/view">
+                  📄 View Report
+                </a>
+              </p>
+            </div>
+          </div>
+        <div class="folder"><p>► 📁 2019</p></div>
+        <div class="folder"><p>► 📁 2020</p></div>
+        <div class="folder"><p>► 📁 2021</p></div>
+        <div class="folder"><p>► 📁 2022</p></div>
+        <div class="folder"><p>► 📁 2023</p></div>
+        <div class="folder"><p>► 📁 2024</p></div>
+        <div class="folder"><p>► 📁 2025</p></div>
+        <div class="folder"><p>► 📁 2026</p></div>
+      </div>
+      <button class="button" onclick="toggleHistoricals()">📜 Historicals</button>
+      <div id="historicalsSection" style="display:none;">
+        <div class="folder" onclick="toggle2018()">► 📁 General</div>
+          <div id="year2018" style="display:none;">
+            <div class="document">
+              <p>
+                <a href="https://drive.google.com/file/d/1rFLfA2QFs40okYaDYrQMZPDCC_Nb3qP9/view">
+                  📄 View Report
+                </a>
+              </p>
+            </div>
+          </div>
+      </div>
     </div>
     <script>
       function toggleCOA(){
         var section = document.getElementById("coaSection");
+        if(section.style.display == "none"){
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      }
+
+      function toggleBudget(){
+        var section = document.getElementById("budgetSection");
+        if(section.style.display == "none"){
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      }
+
+      function toggleOrdinances(){
+        var section = document.getElementById("ordinancesSection");
+        if(section.style.display == "none"){
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      }
+
+      function toggleResolutions(){
+        var section = document.getElementById("resolutionsSection");
+        if(section.style.display == "none"){
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      }
+
+      function toggleHistoricals(){
+        var section = document.getElementById("historicalsSection");
         if(section.style.display == "none"){
           section.style.display = "block";
         } else {
