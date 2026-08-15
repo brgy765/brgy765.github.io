@@ -44,6 +44,18 @@
       #year2018{
         margin-left:30px;
       }
+      .folder{
+        text-align:left;
+        margin-left:40px;
+        padding:8px 0;
+        cursor:pointer;
+        font-weight:bold;
+      }
+      .document{
+        text-align:left;
+        margin-left:80px;
+        padding:8px 0;
+      }
     </style>
   </head>
   <body>
@@ -59,18 +71,18 @@
       <h1>📂 Barangay Records</h1>
       <button class="button" onclick="toggleCOA()">📊 COA Reports</button>
       <div id="coaSection" style="display:none;">
-        <button class="button" onclick="toggle2018()">📁 2018</button>
+        <div class="folder" onclick="toggle2018()">📁 2018</div>
           <div id="year2018" style="display:none;">
-            <p><a class="button" href="">📄 View Report</a></p>
+            <div class="document"<p><a class="button" href="">📄 View Report</a></p></div>
           </div>
-        <p><a class="button" href="">📁 2019</a></p>
-        <p><a class="button" href="">📁 2020</a></p>
-        <p><a class="button" href="">📁 2021</a></p>
-        <p><a class="button" href="">📁 2022</a></p>
-        <p><a class="button" href="">📁 2023</a></p>
-        <p><a class="button" href="">📁 2024</a></p>
-        <p><a class="button" href="">📁 2025</a></p>
-        <p><a class="button" href="">📁 2026</a></p>
+        <div class="folder"><p><a class="button" href="">📁 2019</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2020</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2021</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2022</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2023</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2024</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2025</a></p></div>
+        <div class="folder"><p><a class="button" href="">📁 2026</a></p></div>
       </div>
       <p><a class="button" href="">💰 Budget Reports</a></p>
       <p><a class="button" href="">🧾 Ordinances</a></p>
